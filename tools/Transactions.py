@@ -98,6 +98,8 @@ class Transactions:
         current_file_path = os.path.abspath(__file__)
         project_root = os.path.abspath(os.path.join(current_file_path, '..', '..'))
         output_dir = os.path.join(project_root, 'output')
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
         output_file = f'{output_dir}/output-{int(time.time())}'
 
         if not os.path.isfile(output_file):
