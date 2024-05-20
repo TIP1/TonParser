@@ -1,0 +1,2 @@
+python-dotenv==1.0.1
+ton-client-py==1.44.3.0
